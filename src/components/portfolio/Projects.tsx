@@ -25,7 +25,7 @@ const Projects = () => {
         "Data-driven feature planning and product decisions"
       ],
       icon: Train,
-      status: "In Progress"
+      status: "Completed"
     }
   ];
 
