@@ -27,9 +27,9 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-24">
+    <section id="skills" className="py-20 md:py-24 lg:py-28">
       <div className="section-container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 md:mb-16">
           <span className="text-sm font-medium text-accent uppercase tracking-wider">
             Skills
           </span>
@@ -38,7 +38,7 @@ const Skills = () => {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {skillCategories.map((category) => (
             <div 
               key={category.category}

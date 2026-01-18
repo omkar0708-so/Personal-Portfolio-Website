@@ -25,9 +25,9 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-24">
+    <section id="about" className="py-20 md:py-24 lg:py-28">
       <div className="section-container">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
             <span className="text-sm font-medium text-accent uppercase tracking-wider">
               About Me
@@ -58,7 +58,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-4 md:gap-6">
             {highlights.map((item, index) => (
               <div 
                 key={item.label}

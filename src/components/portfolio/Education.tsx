@@ -17,9 +17,9 @@ const Education = () => {
   ];
 
   return (
-    <section id="education" className="py-24 bg-muted/30">
+    <section id="education" className="py-20 md:py-24 lg:py-28 bg-muted/30">
       <div className="section-container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 md:mb-16">
           <span className="text-sm font-medium text-accent uppercase tracking-wider">
             Education
           </span>
