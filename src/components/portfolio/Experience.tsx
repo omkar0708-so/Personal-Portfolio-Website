@@ -15,9 +15,9 @@ const Experience = () => {
   };
 
   return (
-    <section id="experience" className="py-24">
+    <section id="experience" className="py-20 md:py-24 lg:py-28">
       <div className="section-container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 md:mb-16">
           <span className="text-sm font-medium text-accent uppercase tracking-wider">
             Experience
           </span>

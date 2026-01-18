@@ -30,9 +30,9 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-24 bg-muted/30">
+    <section id="projects" className="py-20 md:py-24 lg:py-28 bg-muted/30">
       <div className="section-container">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12 md:mb-16">
           <span className="text-sm font-medium text-accent uppercase tracking-wider">
             Projects
           </span>
@@ -44,7 +44,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
           {projects.map((project) => (
             <div 
               key={project.title}

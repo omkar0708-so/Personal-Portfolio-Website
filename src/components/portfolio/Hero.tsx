@@ -49,9 +49,9 @@ const Hero = () => {
       </div>
 
       <div className="section-container relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-5 gap-12 lg:gap-16 items-center">
           {/* Left Side - Text Content */}
-          <div className="order-2 lg:order-1 text-center lg:text-left">
+          <div className="order-2 lg:order-1 text-center lg:text-left lg:col-span-3">
             <div className="animate-fade-in-up opacity-0">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary text-secondary-foreground text-sm font-medium mb-6">
                 <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
@@ -98,8 +98,8 @@ const Hero = () => {
                   Get in Touch
                 </a>
               </Button>
-              <Button asChild variant="outline" size="lg" className="gap-2">
-                <a href="/resume.pdf" download>
+              <Button asChild variant="outline" size="lg" className="gap-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                <a href="/assets/Omkar_Thakur_Data_Analyst_CV.docx" download="Omkar_Thakur_Data_Analyst_CV.docx">
                   <Download className="w-4 h-4" />
                   Download CV
                 </a>
@@ -140,7 +140,7 @@ const Hero = () => {
           </div>
 
           {/* Right Side - Profile Image */}
-          <div className="order-1 lg:order-2 flex justify-center animate-fade-in-up opacity-0 stagger-2">
+          <div className="order-1 lg:order-2 lg:col-span-2 flex justify-center animate-fade-in-up opacity-0 stagger-2">
             <div className="relative">
               {/* Decorative Blobs */}
               <div className="absolute -inset-4 md:-inset-8">
