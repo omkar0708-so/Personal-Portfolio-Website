@@ -1,73 +1,88 @@
-# Welcome to your Lovable project
+# 🌐 Personal Portfolio Website
 
-## Project info
+This is my personal portfolio website, designed and built to showcase my **skills, projects, and experience** as a **Data Analyst / Business Analyst**.
+The portfolio was created using **Lovable** and modern frontend technologies, focusing on clean UI, responsiveness, and clarity.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+🔗 **Live Portfolio**: https://omkarwork.lovable.app/#
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 📌 About the Project
 
-**Use Lovable**
+This portfolio serves as a central place to highlight:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+* My professional background and technical skills
+* Data analytics and business-focused projects
+* Tools and technologies I work with
+* Easy ways to connect with me
 
-Changes made via Lovable will be committed automatically to this repo.
+The goal was to build a **simple, modern, and professional** portfolio that reflects my profile and is easy for recruiters to navigate.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ Technologies Used
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* **React** – Component-based UI
+* **TypeScript** – Type safety and maintainable code
+* **Vite** – Fast development and build tool
+* **Tailwind CSS** – Utility-first styling
+* **shadcn/ui** – Reusable and accessible UI components
+* **Lovable** – AI-assisted project creation and deployment
 
-Follow these steps:
+---
+
+## 🚀 Features
+
+* Responsive design (desktop & mobile friendly)
+* Clean and modern UI
+* Projects and skills showcase
+* Fast performance using Vite
+* Easy deployment via Lovable
+
+---
+
+## 💻 Running the Project Locally
+
+If you want to run this project locally:
 
 ```sh
-# Step 1: Clone the repository using the project's Git URL.
+# Clone the repository
 git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
+# Navigate to the project folder
 cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Install dependencies
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start the development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🌍 Deployment
 
-**Use GitHub Codespaces**
+The project is deployed using **Lovable**.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+To deploy:
 
-## What technologies are used for this project?
+1. Open the project on Lovable
+2. Click **Share → Publish**
 
-This project is built with:
+You can also connect a **custom domain** via:
+`Project Settings → Domains → Connect Domain`
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 📬 Contact
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+If you’d like to connect or discuss opportunities:
 
-## Can I connect a custom domain to my Lovable project?
+* **Name**: Omkar R Thakur
+* **Email**: [omkarthakur.it@gmail.com](mailto:omkarthakur.it@gmail.com)
+* **LinkedIn**: [https://linkedin.com/in/omkarthakur2025](https://linkedin.com/in/omkarthakur2025)
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+⭐ If you like this project, feel free to star the repository!
