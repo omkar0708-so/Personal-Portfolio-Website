@@ -1,4 +1,4 @@
-import { ArrowDown, Linkedin, Github, Mail, Download } from "lucide-react";
+import { ArrowDown, Linkedin, Github, Mail, Download, Database, BarChart3, TrendingUp, PieChart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -8,22 +8,45 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
-      {/* Background Pattern */}
+      {/* Data-themed Background */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
       </div>
       
-      {/* Grid Pattern */}
+      {/* Data Grid Pattern */}
       <div 
-        className="absolute inset-0 opacity-[0.02]"
+        className="absolute inset-0 opacity-[0.03]"
         style={{
-          backgroundImage: `linear-gradient(hsl(var(--foreground)) 1px, transparent 1px),
-                           linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)`,
-          backgroundSize: '60px 60px'
+          backgroundImage: `linear-gradient(hsl(var(--primary)) 1px, transparent 1px),
+                           linear-gradient(90deg, hsl(var(--primary)) 1px, transparent 1px)`,
+          backgroundSize: '40px 40px'
         }}
       />
+
+      {/* Floating Data Icons */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <Database className="absolute top-[15%] left-[10%] w-8 h-8 text-primary/10 animate-pulse" style={{ animationDelay: '0s' }} />
+        <BarChart3 className="absolute top-[25%] right-[15%] w-10 h-10 text-accent/10 animate-pulse" style={{ animationDelay: '0.5s' }} />
+        <TrendingUp className="absolute bottom-[30%] left-[8%] w-12 h-12 text-primary/10 animate-pulse" style={{ animationDelay: '1s' }} />
+        <PieChart className="absolute bottom-[20%] right-[12%] w-8 h-8 text-accent/10 animate-pulse" style={{ animationDelay: '1.5s' }} />
+        <Database className="absolute top-[60%] left-[20%] w-6 h-6 text-primary/8 animate-pulse" style={{ animationDelay: '2s' }} />
+        <BarChart3 className="absolute top-[40%] right-[25%] w-6 h-6 text-accent/8 animate-pulse" style={{ animationDelay: '2.5s' }} />
+      </div>
+
+      {/* Binary/Data Stream Effect */}
+      <div className="absolute inset-0 overflow-hidden opacity-[0.02] pointer-events-none">
+        <div className="absolute top-0 left-[10%] text-xs font-mono text-primary leading-none whitespace-nowrap animate-pulse">
+          01001000 01100101 01101100 01101100 01101111
+        </div>
+        <div className="absolute top-[20%] right-[5%] text-xs font-mono text-primary leading-none whitespace-nowrap animate-pulse" style={{ animationDelay: '1s' }}>
+          SELECT * FROM insights WHERE value &gt; 0
+        </div>
+        <div className="absolute bottom-[15%] left-[5%] text-xs font-mono text-primary leading-none whitespace-nowrap animate-pulse" style={{ animationDelay: '2s' }}>
+          df.groupby(&apos;category&apos;).agg(&#123;&apos;sales&apos;: &apos;sum&apos;&#125;)
+        </div>
+      </div>
 
       <div className="section-container relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -75,7 +98,13 @@ const Hero = () => {
                   Get in Touch
                 </a>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button asChild variant="outline" size="lg" className="gap-2">
+                <a href="/resume.pdf" download>
+                  <Download className="w-4 h-4" />
+                  Download CV
+                </a>
+              </Button>
+              <Button asChild variant="ghost" size="lg">
                 <a href="#projects">View Projects</a>
               </Button>
             </div>
@@ -87,20 +116,23 @@ const Hero = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors p-2 rounded-lg hover:bg-primary/10"
+                aria-label="LinkedIn Profile"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="https://github.com" 
+                href="https://github.com/omkar0708-so" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors p-2 rounded-lg hover:bg-primary/10"
+                aria-label="GitHub Profile"
               >
                 <Github className="w-5 h-5" />
               </a>
               <a 
                 href="mailto:omkarthakur.it@gmail.com"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors p-2 rounded-lg hover:bg-primary/10"
+                aria-label="Email"
               >
                 <Mail className="w-5 h-5" />
               </a>
